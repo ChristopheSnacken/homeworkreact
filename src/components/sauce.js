@@ -42,7 +42,10 @@ class ChooseSauce extends PureComponent {
           >
             {sauces.map(sauce => {
               return (
-                <FormControlLabel value={sauce.name} control={<Radio color="primary"/>} label={sauce.name} />
+                <div>
+                  <FormControlLabel value={sauce.name} control={<Radio color="primary"/>} label={sauce.name} />
+                  + Euro {sauce.price}
+              </div>
               )})}
 
           </RadioGroup>

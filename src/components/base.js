@@ -18,8 +18,6 @@ class ChooseBase extends PureComponent {
         name: '25cm NY Style',
         price: 8.99
       }
-
-
     }
   }
 
@@ -45,7 +43,10 @@ class ChooseBase extends PureComponent {
           >
             {bases.map(base => {
               return (
-                <FormControlLabel value={base.name} control={<Radio color="primary"/>} label={base.name} />
+                <div>
+                  <FormControlLabel value={base.name} control={<Radio color="primary"/>} label={base.name} />
+                  Euro {base.price}
+                </div>
               )})}
 
 

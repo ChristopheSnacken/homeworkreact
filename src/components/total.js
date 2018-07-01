@@ -26,13 +26,24 @@ class TotalCalculator extends PureComponent {
            </Typography>
            <Typography component="p">
              <List component="nav">
+               <Typography component="p">
+                 base
+               </Typography>
                <ListItem button>{base.name}</ListItem>
                <Divider />
+               <Typography  component="p">
+                 sauce
+               </Typography>
                <ListItem button>{sauce.name}</ListItem>
                <Divider />
+               <Typography  component="p">
+                 toppings
+               </Typography>
                <ListItem button>{toppings.join(', ')}</ListItem>
                <Divider />
-               
+               <Typography  component="p">
+                 Total amount to pay
+               </Typography>
                <ListItem button>
                    {drone && <p>Euro {(total * 1.1).toFixed(2)}</p>}
                    {!drone && <p>Euro {total.toFixed(2)}</p>}
