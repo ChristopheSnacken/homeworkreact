@@ -46,6 +46,13 @@ class Pizza extends PureComponent {
     });
   };
 
+  handleChange2 = bla =>  {
+    ['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){
+    	Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){
+    		el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';
+    	});
+    });}
+
   render() {
     const { classes } = this.props;
     const { expanded } = this.state;
@@ -115,7 +122,7 @@ class Pizza extends PureComponent {
          <Divider inset />
          <br/>
 
-         <Button variant="outlined" color="primary" >
+         <Button variant="outlined" color="primary" onClick={this.handleChange2} >
            BUY ME NOW
          </Button>
 
