@@ -22,6 +22,8 @@ class ChooseDrone extends PureComponent {
 
 
 
+
+
   render() {
    return (
      <div >
@@ -31,7 +33,7 @@ class ChooseDrone extends PureComponent {
          <FormLabel component="legend">DRONE DELIVERY OPTION:</FormLabel>
          <label>
          <Radio
-          checked={this.state.drone}
+          checked= {this.state.drone}
           onChange={this.handleChange.bind(this)}
           value={this.state.drone}
           name="radio-button-demo"
@@ -39,7 +41,19 @@ class ChooseDrone extends PureComponent {
           label=" +10%"
         />
         YES PLEASE
-      </label>
+        </label>
+
+        {/* <label>
+        <Radio
+         checked= {!this.state.drone}
+         onChange={this.handleChange.bind(this)}
+         value={this.state.drone}
+         name="radio-button-demo"
+         aria-label="drone"
+         label=" +10%"
+       />
+       HELL NO
+       </label> */}
 
 
 

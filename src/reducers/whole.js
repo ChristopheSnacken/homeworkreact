@@ -1,16 +1,16 @@
 
 import { CHOOSE_BASE, CHOOSE_SAUCE, CHOOSE_TOPPINGS, CHOOSE_DRONE } from '../actions'
 
-export default function(state, { type, payload }) {
-  switch (type) {
+export default function(state, action) {
+  switch (action.type) {
     case CHOOSE_BASE:
-      return { ...state, base: payload }
+      return { ...state, base: action.payload }
     case CHOOSE_SAUCE:
-      return { ...state, sauce: payload }
+      return { ...state, sauce: action.payload }
     case CHOOSE_TOPPINGS:
-      return { ...state, toppings: payload }
+      return { ...state, toppings: action.payload }
     case CHOOSE_DRONE:
-      return { ...state, drone: payload }
+      return { ...state, drone: action.payload }
     default:
       return {
         base: {

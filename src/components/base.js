@@ -43,10 +43,7 @@ class ChooseBase extends PureComponent {
           >
             {bases.map(base => {
               return (
-                <div>
-                  <FormControlLabel value={base.name} control={<Radio color="primary"/>} label={base.name} />
-                  Euro {base.price}
-                </div>
+                <FormControlLabel value={base.name} control={<Radio color="primary"/>} label={base.name} />
               )})}
 
 
