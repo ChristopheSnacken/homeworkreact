@@ -43,7 +43,7 @@ class ChooseDrone extends PureComponent {
         YES PLEASE
         </label>
 
-        {/* <label>
+        <label>
         <Radio
          checked= {!this.state.drone}
          onChange={this.handleChange.bind(this)}
@@ -53,7 +53,7 @@ class ChooseDrone extends PureComponent {
          label=" +10%"
        />
        HELL NO
-       </label> */}
+       </label>
 
 
 
